@@ -25,7 +25,6 @@ export class CdkDragDropSortingExample {
 
   drop(event: CdkDragDrop<string[]>) {
     this.input = this.movies[event.currentIndex];
-    console.log(event);
     moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
   }
 }
